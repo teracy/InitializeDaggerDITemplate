@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="5"
+    name="Init Dagger DI"
+    minApi="9"
+    minBuildApi="14"
+    description="Initialize Dagger DI">
+
+    <category value="MyCategory" />
+
+    <parameter
+        id="includeAndroidArch"
+        name="Include Android Architecture Components ViewModel"
+        type="boolean"
+        default="false"
+        help="If true, sample activity base class will be AppCompatActivity forcibly" />
+
+    <parameter
+        id="backwardsCompatibility"
+        name="Backwards Compatibility (AppCompat)"
+        type="boolean"
+        enabled="!includeAndroidArch"
+        default="true"
+        help="If false, sample activity base class will be Activity instead of AppCompatActivity" />
+
+    <parameter
+        id="packageName"
+        name="Package name"
+        type="string"
+        constraints="package"
+        default="com.mycompany.myapp"/>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>

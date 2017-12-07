@@ -1,0 +1,31 @@
+フォルダ構成は以下の通り
+
+root
+  di
+    activity
+      ActivityBindingModule(blank)
+      ActivityComponent
+      ActivityComponentBulder
+      ActivityMapKey
+      ActivityModule
+    app
+      AppComponent
+      AppModule
+    fragment
+      FragmentBindingModule(blank)
+      FragmentComponent
+      FragmentComponentBulder
+      FragmentMapKey
+      FragmentModule
+    scope
+      ActivityScope
+      FragmentScope
+      ViewModelScope(optional)
+    viewmodel(optional)
+      ViewModelBindingModule(blank)
+      ViewModelComponent
+      ViewModelComponentBuilder
+      ViewModelMapKey
+      ViewModelModule
+    DaggerUtil
+  App
